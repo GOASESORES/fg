@@ -10,7 +10,7 @@ $user = new User();
 if(isset($_SESSION['user'])){
     //echo "hay sesion";
     $user->setUser($userSession->getCurrentUser());
-   
+
 
 
 
@@ -68,7 +68,7 @@ if(isset($_SESSION['user'])){
   <link rel="stylesheet" href="../../assets/css/argon.min23cd.css?v=1.2.1" type="text/css">
   <!-- Google Tag Manager -->
   <script>
-  
+
     (function(w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
@@ -85,8 +85,8 @@ if(isset($_SESSION['user'])){
     })(window, document, 'script', 'dataLayer', 'GTM-NKDMSK6');
   </script>
   <!-- End Google Tag Manager -->
-  
-  
+
+
   <style>
   .avatar {
     font-size: 1rem;
@@ -100,7 +100,7 @@ if(isset($_SESSION['user'])){
     justify-content: center;
 }
   </style>
-  
+
 </head>
 
 <body>
@@ -116,7 +116,7 @@ if(isset($_SESSION['user'])){
         <div class="header-body">
           <div class="row align-items-center py-4">
             <div class="col-lg-6 col-7">
-              <h6 class="h2 text-white d-inline-block mb-0">Gestion de cargos</h6>
+              <h6 class="h2 text-white d-inline-block mb-0">Gestión de cargos</h6>
               <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                   <li class="breadcrumb-item"><a href="../dashboards/dashboard.php"><i class="fas fa-home"></i></a></li>
@@ -125,7 +125,7 @@ if(isset($_SESSION['user'])){
                 </ol>
               </nav>
             </div>
-           
+
           </div>
         </div>
       </div>
@@ -135,49 +135,49 @@ if(isset($_SESSION['user'])){
       <div class="row">
         <div class="col">
           <div class="card-wrapper">
-           
+
             <!-- Default browser form validation -->
             <div class="card">
               <!-- Card header -->
-             
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
               <!-- Card body -->
               <div class="card-body">
-			  
-			  
+
+
                <div class="row icon-examples">
                 <div style="padding-top: 15px;" class="col-lg-4 col-md-6">
 				<button  type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href=&quot;nuevocargo.php&quot;">
-				
+
 				  <div>
                       <i class="ni ni-fat-add "></i>
                       <span>Nuevo cargo</span>
                     </div>
-				
-				
-				
+
+
+
 				</button>
                 </div>
-				
+
                 <div style="padding-top: 15px;"class="col-lg-4 col-md-6">
                   <button type="button" class="btn btn-warning btn-lg btn-block" onclick="location.href=&quot;modificarcargo.php&quot;">
 				 <div>
@@ -186,7 +186,7 @@ if(isset($_SESSION['user'])){
                     </div>
 				  </button>
                 </div>
-				
+
 				 <div style="padding-top: 15px;" class="col-lg-4 col-md-6">
                   <button type="button" class="btn btn-danger btn-lg btn-block" onclick="location.href=&quot;eliminarcargo.php&quot;">
 				  <div>
@@ -195,22 +195,22 @@ if(isset($_SESSION['user'])){
                     </div>
 				  </button>
                 </div>
-				
+
 				</div>
-                
-               
+
+
               </div>
             </div>
             <!-- Default browser form validation -->
-           
-		   
-		   
-		    
+
+
+
+
 			  <div class="row ">
-			  
-			  
+
+
 			  <?php
-			  
+
 	require('../bd/conexion.php');
 
  $empresa=$user->getempresa();
@@ -225,13 +225,13 @@ $nombre=$rov['nombre'];
 
 
 
-?>			  
-			  
-			  
-			  
-		  
-			  
-			  
+?>
+
+
+
+
+
+
 			  <style>
 			  .avatar {
     font-size: 1rem;
@@ -245,7 +245,7 @@ $nombre=$rov['nombre'];
     justify-content: center;
 }
 			  </style>
-			  
+
 			   <div class="col-md-4 ">
               <style>
 #foto {
@@ -274,8 +274,8 @@ $nombre=$rov['nombre'];
                   <h4 class="mb-0">
                     <a href="#!"><?php echo $nombre;?></a>
                   </h4>
-				  
-                
+
+
                   <span class="text-success">●</span>
                   <small>Activo</small>
                 </div>
@@ -293,32 +293,32 @@ $nombre=$rov['nombre'];
     justify-content: center;
 }
 				  </style>
-				  
+
                   <button type="button" onclick="location.href='cargover.php?valor=<?php echo $rov['id_cargo'] ?>'" class="btn btn-sm btn-success">Ver</button>
                 </div>
               </div>
             </div>
           </div>
-          
+
 		   </div>
-		   		   
+
 <?php  } ?>
-		  
+
 		    </div>
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <!-- Footer -->
   <?php require('../general/footer.php')?>
     </div>
@@ -397,7 +397,7 @@ $nombre=$rov['nombre'];
 
 }else{
     //echo "login";
-    
+
 	?>
 	<script>
 	location.href = "../../index.php";
