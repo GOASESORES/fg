@@ -10,7 +10,7 @@ $user = new User();
 if(isset($_SESSION['user'])){
     //echo "hay sesion";
     $user->setUser($userSession->getCurrentUser());
-   
+
 
 
 
@@ -80,7 +80,7 @@ if(isset($_SESSION['user'])){
   <link rel="stylesheet" href="../../assets/css/argon.min23cd.css?v=1.2.1" type="text/css">
   <!-- Google Tag Manager -->
   <script>
-  
+
     (function(w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
@@ -97,8 +97,8 @@ if(isset($_SESSION['user'])){
     })(window, document, 'script', 'dataLayer', 'GTM-NKDMSK6');
   </script>
   <!-- End Google Tag Manager -->
-  
-  
+
+
   <style>
   .avatar {
     font-size: 1rem;
@@ -112,7 +112,7 @@ if(isset($_SESSION['user'])){
     justify-content: center;
 }
   </style>
-  
+
 </head>
 
  <?php require('../general/nav.php');?>
@@ -132,16 +132,16 @@ if(isset($_SESSION['user'])){
                 </ol>
               </nav>
             </div>
-          
+
           </div>
         </div>
       </div>
     </div>
-	
-	
-	
-	
-	<?php 
+
+
+
+
+	<?php
 	 require('../bd/conexion.php');
 
 $valor=$_GET['valor'];
@@ -150,28 +150,28 @@ $caa=$mysqli->query($quera);
 $rov=$caa->fetch_assoc();
 
 	?>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Page content -->
     <div class="container-fluid mt--6">
       <div class="row">
@@ -180,7 +180,7 @@ $rov=$caa->fetch_assoc();
             <!-- Custom form validation -->
             <div class="card">
               <!-- Card header -->
-              
+
               <!-- Card body -->
               <div class="card-body">
                 <div class="row">
@@ -188,104 +188,104 @@ $rov=$caa->fetch_assoc();
                 <h3 class="mb-0">Datos del cargo</h3>
               </div>
                 </div>
-              
-                
-                
+
+
+
               <!-- Card body -->
               <div class="card-body">
-               
+
   <div class="form-row">
-                
+
 					<div class="col-md-4 mb-3">
                       <label class="form-control-label" for="validationCustom02">Nombre</label>
                       <input name="nombre" type="text" class="form-control" id="validationCustom02" value="<?php echo $rov['nombre']; ?>" readonly placeholder="Apellidos"  required>
-                      
+
                     </div>
-					
+
 					<div class="col-md-12 mb-3">
-                      <label class="form-control-label" for="validationCustom02">Descripcion</label>
+                      <label class="form-control-label" for="validationCustom02">Descripción</label>
                      <textarea class="form-control" name="descripcion" id="exampleFormControlTextarea1"  readonly rows="3"><?php echo $rov['descripcion']; ?></textarea>
-                     
+
                     </div>
-			
-					
-					
-					
-					
-				
-                 
-                  
+
+
+
+
+
+
+
+
                     </div>
 				  </div>
-				  
+
                   <button class="btn btn-primary btn-lg btn-block"  onclick="location.href='cargos.php'" type="submit">VOLVER</button>
-               
+
               </div>
             </div>
-           
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		              
-				  
-                  
-             
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <!-- Footer -->
         <?php require('../general/footer.php')?>
     </div>
   </div>
- 
- 
+
+
   <!-- Argon Scripts -->
    <script src="../../assets/vendor/select2/dist/js/select2.min.js"></script>
   <script src="../../assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
@@ -347,13 +347,13 @@ $rov=$caa->fetch_assoc();
 <!-- Mirrored from demos.creative-tim.com/argon-dashboard-pro/pages/dashboards/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Jun 2021 05:26:38 GMT -->
 </html>
   <!-- Optional JS -->
- 
+
 
 <?php
 
 }else{
     //echo "login";
-    
+
 	?>
 	<script>
 	location.href = "../../index.php";
