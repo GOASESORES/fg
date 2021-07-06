@@ -170,7 +170,7 @@ if(isset($_SESSION['user'])){
 
 				  <div>
                       <i class="ni ni-fat-add "></i>
-                      <span>Nuevo cargo</span>
+                      <span>Nuevo cargo prueba</span>
                     </div>
 
 
